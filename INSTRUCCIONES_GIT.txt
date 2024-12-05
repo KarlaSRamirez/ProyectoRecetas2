@@ -1,0 +1,44 @@
+DESCARGAR LAS DEMÁS RAMAS REMOTAS
+<--> Consola <-->
+git fetch (Listo)
+
+
+
+COMO PUBLICAR TUS CAMBIOS
+
+<--> Consola <-->
+git status (Para verificar archivos)
+git add [ . ][ Nombre de archivos ] ( . para agregar todos los archivos o agregar cada uno.)
+git commit -m "Comentario"
+git push (Para publicar)
+
+<--> VSC <-->
+Ir a sección de git
+Seleccionar archivos que quieras subir
+Dar clic en boton de confirmar y hacer commit
+Volver a dar clic en mismo botón para verificar y sincronizar CAMBIOS
+
+
+
+COMO PUBLICAR Y APLICAR A MAIN
+
+<--> Consola <-->
+git checkout main
+git merge [Nombre Rama]
+git add .
+git commit -m "Comentario"
+git push origin
+
+<--> VSC <-->
+
+
+
+APLICAR CAMBIOS DE MAIN A UNA RAMAS
+
+<--> Consola <-->
+git checkout [Nombre rama]
+git fetch origin
+git pull origin main
+git merge main
+git add .
+git commit -m "Comentario"
